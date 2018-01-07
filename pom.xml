@@ -61,8 +61,22 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				
+				<version>1.5.9.RELEASE</version>
+		        <executions>
+		          <execution>
+		            <goals>
+		              <goal>repackage</goal>
+		            </goals>
+		            <configuration>
+		              <attach>false</attach>
+		            </configuration>
+		          </execution>
+		        </executions>
 			</plugin>
+			
 		</plugins>
+		
 	</build>
 
 
